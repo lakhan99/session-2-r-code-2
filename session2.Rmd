@@ -7,6 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
 ```
 
 ## Read survey 1
@@ -14,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Here we are going to read an Excel file 
 
 ```{r}
-readxl::read_excel("~/shared/survey1.xlsx")
+survey1 <- readxl::read_excel("~/shared/survey1.xlsx")
+kable(survey1)
 ```
 
